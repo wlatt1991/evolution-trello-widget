@@ -15,6 +15,6 @@ if ($e->name == 'OnManagerWelcomeHome') {
         'cols' => 'col-sm-' . $width,
         'icon' => 'fa-trello',
         'title' => 'Trello',
-        'body' => '<div style="padding: 1rem;">'.implode('', $boardUrlsArr).'<script src="https://p.trellocdn.com/embed.min.js"></script></div>', );
+        'body' => '<div style="padding: 1rem; overflow-y: auto; max-height: 450px;">'.implode('', $boardUrlsArr).'<script src="https://p.trellocdn.com/embed.min.js"></script></div>', );
     $e->output(serialize($widgets));
 }
