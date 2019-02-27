@@ -11,7 +11,7 @@
  * @author      Wlatt (wlatt1991@yandex.ru) 
  * @internal    @events OnManagerWelcomeHome
  * @internal    @modx_category Manager and Admin
- * @internal    @properties  &boardUrls=Urls trello boards (separator: ';');text;https://trello.com/b/nC8QJJoZ/trello-development-roadmap
+ * @internal    @properties  &boardUrls=Urls trello boards (separator: ',');text;https://trello.com/b/nC8QJJoZ/trello-development-roadmap &position=Position on dashboard;text;20 &width=Widget width (12 or 6);text;12
  * @internal    @installset base
  * @internal    @disabled 0
  */
