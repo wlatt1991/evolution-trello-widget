@@ -7,7 +7,7 @@ if ($e->name == 'OnManagerWelcomeHome') {
     $boardUrls = isset($boardUrls) ? $boardUrls : 'https://trello.com/b/nC8QJJoZ';
     $boardUrlsArr = explode(',', $boardUrls);
     foreach ($boardUrlsArr as $key => $value) {
-        $boardUrlsArr[$key] = '<blockquote class="trello-board-compact"><a href="'.$value.'">Trello Card</a></blockquote>';
+        $boardUrlsArr[$key] = '<div style="float:left;margin:10px"><blockquote class="trello-board-compact"><a href="'.$value.'">Trello Card</a></blockquote></div>';
     }
     $widgets['trello_widget'] = array(
         'menuindex' => $position,
