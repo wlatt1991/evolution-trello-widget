@@ -11,10 +11,10 @@ if ($e->name == 'OnManagerWelcomeHome') {
     }
     $widgets['trello_widget'] = array(
         'menuindex' => $position,
-        'id' => 'managernote_widget',
+        'id' => 'trello_widget',
         'cols' => 'col-sm-' . $width,
-        'icon' => 'fa-sticky-note',
+        'icon' => 'fa-trello',
         'title' => 'Trello',
-        'body' => implode('', $boardUrlsArr).'<script src="https://p.trellocdn.com/embed.min.js"></script>', );
+        'body' => implode(' ', $boardUrlsArr).'<script src="https://p.trellocdn.com/embed.min.js"></script>', );
     $e->output(serialize($widgets));
 }
