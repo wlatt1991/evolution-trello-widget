@@ -4,7 +4,7 @@ $e = &$modx->Event;
 if ($e->name == 'OnManagerWelcomeHome') {
     $position = isset($position) ? $position : 20;
 	$width = isset($width) ? $width : 12;
-    $boardUrls = isset($boardUrls) ? $boardUrls : 'https://trello.com/b/nC8QJJoZ/trello-development-roadmap';
+    $boardUrls = isset($boardUrls) ? $boardUrls : 'https://trello.com/b/nC8QJJoZ';
     $boardUrlsArr = explode(',', $boardUrls);
     foreach ($boardUrlsArr as $key => $value) {
         $boardUrlsArr[$key] = '<blockquote class="trello-card"><a href="'.$value.'">Trello Card</a></blockquote>';
